@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   sonarcloud:
-    name: SonarCloud
+    name: Check Application
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
