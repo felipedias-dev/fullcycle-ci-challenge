@@ -13,9 +13,9 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
       - run: npm install
-      - run: jest --coverage
+      - run: npm run test
       
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
